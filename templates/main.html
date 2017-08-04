@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- This part is important! It includes the firebase setup code in this template. -->
+    {% include "_firebase_config.html" %}
+    <link rel="stylesheet" type="text/css" href="static/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="static/main.js"></script>
+  </head>
+  <body>
+    <div id='count'></div>
+    <script>
+       //Important for initializing firebase. The token that was passed from main.py is passed to our .js file from this.
+       initFirebase('{{ token }}', '{{ channel }}');
+    </script>
+  </body>
+</html>

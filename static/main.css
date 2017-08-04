@@ -1,0 +1,11 @@
+/*Fill in css values here*/
+#count {
+	font-size: 3em;
+	font-weight: bold;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	color: #F15D59;
+	font-family: 'Roboto', sans-serif;
+}
